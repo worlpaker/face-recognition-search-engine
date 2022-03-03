@@ -1,0 +1,130 @@
+.page-header {
+    background-color: #4998ac;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'sans-serif';
+}
+
+.text{
+    font-family: 'sans-serif';
+    font-size: 24pt;
+    text-align: center;
+    color: #000;
+    
+}
+.text_green{
+    font-family: 'sans-serif';
+    font-size: 30pt;
+    text-align: center;
+    color: rgb(16, 104, 13);
+    
+}
+.text_save{
+    text-align: center;
+    font-family: 'sans-serif';
+    font-size: 16pt;
+    justify-content: space-between;
+    margin: .5rem;
+}
+
+.text_unknown{
+    color: rgb(250, 8, 8);
+    font-family: 'sans-serif';
+    font-size: 24pt;
+    text-align: center;
+
+}
+.button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 50px;
+    font-size: 16pt;
+    font-family: 'sans-serif';
+    margin: 20pt;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 100px;
+    background-color: rgb(225, 250, 6);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.button:hover {
+    background-color: rgb(0, 255, 170);
+}
+
+.button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.save_button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 50px;
+    font-size: 16pt;
+    font-family: 'sans-serif';
+    margin: 20pt;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 100px;
+    background-color: rgb(225, 250, 6);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.save_button:hover {
+    background-color: rgb(0, 255, 170);
+}
+
+.save_button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.date {
+    color: #beee0f;
+}
+.form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5pt;
+    
+}
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

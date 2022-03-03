@@ -1,0 +1,54 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Face Recognition Search Engine</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/css_file.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Face Recognition Search Engine</a></h1>
+        </div>
+         <div class="text"> <p>Upload image</p> </div>
+         <form class="form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input class="form" type="file" name="upload" accept="image/*">       
+            
+         <button class="button" type="submit" name="uploading_button">UPLOAD</button>    </form> 
+ 
+          {% if file_url %}
+          {% if Name == 'unknown' %}
+         <div class="text_unknown"> -UNKNOWN FACE- <span class="text"> Do you want to help us to recognize? </span> </div>
+          <form class="text_save" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="face_name" >Face Name:</label>
+            <input type="text"  id="face_name" name="face_name" >
+            <input class="save_button" type="submit" value="SAVE" />
+        </form>
+          <img src="{{file_url}}" class="picture"   > 
+         
+   
+          {% elif Name == 'no_faces' %}
+
+          <div class="text_unknown"><p> No Face Found. Please try another picture.</p> </div>
+          <img src="{{file_url}}" class="picture" height="50%"> 
+          {% else %}
+           <div class="text"><p>System Recognized: <span class="text_green"> {{Name}} </span> </p></div> 
+            <img src="{{file_url}}" class="picture" > 
+          {% endif %} 
+          
+          {% endif %} 
+
+
+          {% if check_label == 'success'  %}
+          <div class="text_green">{{label}} <span class="text"> face successfully uploaded! Please refresh the page</span> </div>
+          <img src="{{new_url}}" class="picture"  >
+          {% elif label == 'already_saved' %}
+          <div class="text_unknown">Name already saved in the system, please try another picture/name.</div>       
+          {% endif %}
+
+    </body>
+</html>
