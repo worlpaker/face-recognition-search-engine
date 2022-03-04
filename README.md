@@ -1,4 +1,4 @@
-# Face Recognition Search Engine, Web Site
+# Face Recognition Search Engine, Website
 ![Program](Program.jpg)
 ## ABOUT
 - Searches Face(s) for your upload photos to page.
