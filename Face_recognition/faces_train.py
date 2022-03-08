@@ -182,15 +182,7 @@ def show_prediction_labels_on_image(img_path, predictions):
 
 
 
-'''def check_face(file_name):
- full_file_path = os.path.join("Face_recognition/media", file_name)
- predictions = predict(full_file_path, model_path="Face_recognition/data/train/trained_knn_model.clf")
-
- # Print results on the console
- for name, (top, right, bottom, left) in predictions:
-     print("- Found {} at ({}, {})".format(name, left, top))'''
-
-
+# check face
 def check_face(file_name):
     all_names = []
     file_exists = os.path.exists("Face_recognition/data/train/trained_knn_model.clf") 
